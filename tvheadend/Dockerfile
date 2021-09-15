@@ -22,7 +22,7 @@ RUN \
         --prefer-binary \
         -r /tmp/requirements.txt \
     && apk del --no-cache --purge .build-deps
-
+	--device /dev/dvb:/dev/dvb \
 # Copy root filesystem
 COPY rootfs /
 
