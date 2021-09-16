@@ -8,10 +8,7 @@
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "webui": "http://[HOST]:[PORT:9981]/",
   "usb": true,
-  #"devices": ["/dev/dvb"],
-  "devices": {
-    "/dev/dvb/adapter0": "/dev/dvb/adapter0"
-  },
+  "devices": "/dev/dvb/adapter0:/dev/dvb/adapter0",
   "ports": {
     "9981/tcp": 9981,
     "9982/tcp": 9982
